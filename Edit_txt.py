@@ -43,10 +43,42 @@ def remove_accents(input_str):
 
 
 
-def get_random_district(district_list=['Ba Đình', 'Cầu Giấy', 'Hoàn Kiếm', 'Hai Bà Trưng', 'Hoàng Mai', 'Đống Đa', 'Tây Hồ', 'Thanh Xuân', 'Bắc Từ Liêm', "Hà Đông"]):
+def get_random_district(district_list =[
+    "Ba Đình",
+    "Hoàn Kiếm",
+    "Hai Bà Trưng",
+    "Đống Đa",
+    "Tây Hồ",
+    "Cầu Giấy",
+    "Thanh Xuân",
+    "Hoàng Mai",
+    "Long Biên",
+    "Nam Từ Liêm",
+    "Bắc Từ Liêm",
+    "Hà Đông",
+    "Ba Vì",
+    "Sóc Sơn",
+    "Đông Anh",
+    "Gia Lâm",
+    "Hoài Đức",
+    "Thanh Trì",
+    "Quốc Oai",
+    "Thạch Thất",
+    "Chương Mỹ",
+    "Đan Phượng",
+    "Phúc Thọ",
+    "Thường Tín",
+    "Phú Xuyên",
+    "Mỹ Đức",
+    "Ứng Hòa",
+    "Mê Linh"
+]
+
+):
    
     values = [item for item in district_list]
-    probabilities = [0.1 for _ in district_list]
+    num_districts = len(values)
+    probabilities = [1/num_districts for _ in district_list]
     chosen_item = random.choices(values, probabilities)[0]
     return chosen_item
 
