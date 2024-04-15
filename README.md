@@ -7,6 +7,8 @@ api key giới tính lấy tại https://namsor.app/csv-excel-tool/
 (tỷ lệ đúng chỉ 70%)
 
 về phần địa chỉ thì mới có các quận huyện khu vực Hà Nội có thể thêm các khu vực khác
+
+
 nếu k chọn dùng api thì mặc định giới tính là 0
 
 trước khi insert cần đọc kĩ những lớp học cần thêm (viết trong phần comment file .sql (ví dụ DS_QTKD2021.sql))
